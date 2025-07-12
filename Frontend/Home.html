@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StackIt - Home</title>
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Utiles/Home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="logo">StackIt</h1>
+        <a href="./Autentication.html" class="login-btn">Login</a>
+      </header>
+
+      <!-- Filters and Search -->
+      <div class="top-bar">
+        <div class="filters">
+          <button class="ask-btn" onclick="openModal()">
+            Ask New Question
+          </button>
+          <button class="filter-btn">Newest</button>
+          <button class="filter-btn">Unanswered</button>
+          <button class="filter-btn">More ▼</button>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <button class="search-icon">🔍</button>
+        </div>
+      </div>
+
+      <!-- Question List -->
+      <div class="question-list">
+        <div class="question-card">
+          <div class="question-content">
+            <h2>
+              How to join 2 columns in a data set to make a separate column in
+              SQL
+            </h2>
+            <p>I do not know the code for it as I am a beginner...</p>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Beginner</span>
+            </div>
+            <p class="user-name">JohnDoe</p>
+          </div>
+          <div class="answers">5 ans</div>
+        </div>
+        <!-- Add more questions similarly -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button>&lt;</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>&gt;</button>
+      </div>
+    </div>
+
+    <!-- Ask Question Modal -->
+    <div class="modal" id="askModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Ask a Question</h2>
+          <button onclick="closeModal()">✖</button>
+        </div>
+
+        <form class="form">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Enter your question title..."
+          />
+
+          <label for="desc">Description</label>
+          <div id="editor"></div>
+
+          <label for="tags">Tags</label>
+          <input type="text" id="tags" placeholder="e.g. HTML, CSS, JS" />
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Login Required Modal -->
+    <div class="login-modal" id="loginModal">
+      <div class="login-modal-content">
+        <h2>You must login to ask a question</h2>
+        <a href="./Autentication.html" id="goToLoginBtn">Go to Login</a>
+        <button class="close-login-modal" onclick="closeLoginModal()">
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <script src="./Utiles/Home.js"></script>
+  </body>
+</html>
