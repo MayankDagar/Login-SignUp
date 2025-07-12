@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noise Comparison Question</title>
+  <link rel="stylesheet" href="./Utiles/Screen3.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="question-header">
+      <h1>How to compare noise between two RGB images using KL divergence or other similarity metrics?</h1>
+      <div class="meta-info">Asked today · Modified today · Viewed 12 times</div>
+    </div>
+
+    <div class="content-area">
+      <div class="vote-column">
+        <button class="vote-btn">▲</button>
+        <div class="vote-count">0</div>
+        <button class="vote-btn">▼</button>
+      </div>
+
+      <div class="question-content">
+        <p>
+          I have two RGB images that represent noise, and their shape is [H, W, 3] (height, width, 3 color channels).
+          I want to compare how similar the noise distributions are between the two images.
+        </p>
+
+        <p><strong>My questions are:</strong></p>
+        <ul>
+          <li>Can I use KL divergence (Kullback–Leibler divergence) to compare the noise patterns of these two RGB images?</li>
+          <li>Since these are not explicitly modeled distributions, what is the proper way to estimate their probability distributions before computing KL divergence?</li>
+          <li>Are there alternative metrics better suited for comparing noise similarity between images, especially when noise is high-dimensional and not normally distributed?</li>
+        </ul>
+
+        
+      </div>
+    </div>
+
+    <div class="answer-box">
+      <textarea placeholder="Add your answer..." rows="5"></textarea>
+      <button onclick="submitAnswer()">Post Your Answer</button>
+    </div>
+  </div>
+
+  <script src="./Utiles/Screen3.js"></script>
+</body>
+</html>

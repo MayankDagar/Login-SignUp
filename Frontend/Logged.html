@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="./Utiles/Logged.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="https://placehold.co/40x40/4a6bff/ffffff?text=App" alt="App logo - blue square with white text saying 'App'">
+            <h1>MyApp</h1>
+        </a>
+        <div class="auth-section">
+            <button class="login-btn" id="loginButton">Login</button>
+            <img src="https://placehold.co/40x40/4a6bff/ffffff?text=U" alt="User avatar placeholder - blue circle with white initial" class="user-avatar" id="userAvatar">
+        </div>
+        
+        <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-header">
+                <div class="dropdown-item">Welcome, <span id="dropdownUsername">User</span></div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Profile</a>
+            <a href="#" class="dropdown-item">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" id="logoutButton">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container" id="loginContainer">
+            <h2 class="login-title">Welcome Back</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="submit-btn" id="submitButton">Sign In</button>
+        </div>
+
+        <div class="dashboard" id="dashboard">
+            <div class="welcome-message">
+                <h2>Welcome to Your Dashboard</h2>
+                <p>You're successfully logged in and ready to explore our services.</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/40x40/4a6bff/ffffff?text=P1" alt="Profile icon with initial P1">
+                        <h3 class="card-title">Your Profile</h3>
+                    </div>
+                    <p class="card-content">Complete your profile information to help us personalize your experience.</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/40x40/4a6bff/ffffff?text=S1" alt="Settings icon with initial S1">
+                        <h3 class="card-title">Account Settings</h3>
+                    </div>
+                    <p class="card-content">Manage your account preferences, security options, and notification settings.</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <img src="https://placehold.co/40x40/4a6bff/ffffff?text=D1" alt="Dashboard icon with initial D1">
+                        <h3 class="card-title">Dashboard Analytics</h3>
+                    </div>
+                    <p class="card-content">View your activity statistics and performance metrics all in one place.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="./Utiles/Logged.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="login__forms">
-                    <form action="http://localhost:8000/api/v1/auth/login" class="login__registre" id="login-in">
+                    <form class="login__registre" id="login-in">
                         <h1 class="login__title">Sign In</h1>
     
                         <div class="login__box">
@@ -35,7 +35,7 @@
 
                         <!-- <a href="#" class="login__forgot">Forgot password?</a> -->
 
-                        <a href="#" class="login__button">Sign In</a>
+                        <button type="button" class="login__button" id="login-submit">Sign In</button>
 
                         <div>
                             <span class="login__account">Don't have an Account ?</span>
@@ -43,7 +43,7 @@
                         </div>
                     </form>
 
-                    <form action="http://localhost:8000/api/v1/auth/register" class="login__create none" id="login-up">
+                    <form  class="login__create none" id="login-up">
                         <h1 class="login__title">Create Account</h1>
     
                         <div class="login__box">
@@ -61,7 +61,7 @@
                             <input type="password" placeholder="Password" class="login__input">
                         </div>
 
-                        <a href="#" class="login__button">Sign Up</a>
+                        <button type="button" class="login__button" id="signup-submit">Sign Up</button>
 
                         <div>
                             <span class="login__account">Already have an Account ?</span>
