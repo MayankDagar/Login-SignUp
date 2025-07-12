@@ -1,0 +1,13 @@
+.vote-btn:hover {
+  color: rgb(59 130 246);
+}
+.vote-btn.voted {
+  color: rgb(59 130 246);
+}
+.downvote-btn.voted {
+  color: #ef4444;
+}
+.accepted {
+  border-left: 3px solid rgb(34 197 94);
+  background-color: rgba(34, 197, 94, 0.05);
+}
